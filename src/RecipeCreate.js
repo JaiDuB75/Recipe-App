@@ -46,6 +46,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 name="name"
                 type="text"
                 value={name}
+                required={true}
                 onChange={nameHandler}
                 placeholder="Name"
               />
@@ -56,6 +57,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 name="cuisine"
                 type="text"
                 value={cuisine}
+                required={true}
                 onChange={cuisineHandler}
                 placeholder="Cuisine"
               />
@@ -66,6 +68,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 name="photo"
                 type="url"
                 value={photo}
+                required={true}
                 onChange={photoHandler}
                 placeholder="Photo"
               />
@@ -76,6 +79,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 name="Ingredients"
                 type="text"
                 value={ingredients}
+                required={true}
                 onChange={ingredientsHandler}
                 placeholder="Ingredients"
               />
@@ -86,6 +90,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 name="Preparation"
                 type="content"
                 value={preparation}
+                required={true}
                 onChange={preparationHandler}
                 placeholder="Preparation"
               />

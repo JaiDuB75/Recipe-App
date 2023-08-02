@@ -7,11 +7,11 @@ function RecipeView({ recipe, deleteRecipes }) {
       <td className='recipe-text'>{recipe.name}</td>
       <td className='recipe-text'>{recipe.cuisine}</td>
       <td>
-        <img className='recipe-photo' src={recipe.photo} />
+        <img className='recipe-photo' src={recipe.photo} alt=''/>
       </td>
-      <td className='recipe-text'>{recipe.ingredients}</td>
-      <td>{recipe.preparation}</td>
-      <td className='recipe-text'>
+      <td className='content_td'><p>{recipe.ingredients}</p></td>
+      <td className='content_td'><p>{recipe.preparation}</p></td>
+      <td>
         <button name="delete" onClick={deleteRecipes}>
           Delete
         </button>
