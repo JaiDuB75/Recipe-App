@@ -1,9 +1,8 @@
-.recipe-photo{
-    background-color: antiquewhite;
+ .recipe-photo{
     width: 125px;
 }
 
-.recipe-text{
+/* .recipe-text{
     background-color: antiquewhite;
     padding-left: 25px;
     padding-right: 25px;
@@ -12,5 +11,5 @@
 
 .recipe-table{
     background-color: burlywood;
-}
+}  */
 
