@@ -7,11 +7,11 @@ function RecipeCreate({ recipes, setRecipes }) {
   // TODO: Add the required submit and change handlers
 
   //Creating states for required fields
-  const [name, setName] = useState("Name");
-  const [cuisine, setCuisine] = useState("Cuisine");
-  const [photo, setPhoto] = useState("URL");
-  const [ingredients, setIngredients] = useState("Ingredients");
-  const [preparation, setPreparation] = useState("Preparation");
+  const [name, setName] = useState("");
+  const [cuisine, setCuisine] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [ingredients, setIngredients] = useState("");
+  const [preparation, setPreparation] = useState("");
 
   //Handlers for setting the value from the event
   const nameHandler = (event) => setName(event.target.value);
@@ -37,16 +37,7 @@ function RecipeCreate({ recipes, setRecipes }) {
   return (
     <form name="create" onSubmit={submitHandler}>
       <table className="table-color">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
+
         <tbody>
           <tr>
             <td>
@@ -56,6 +47,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 type="text"
                 value={name}
                 onChange={nameHandler}
+                placeholder="Name"
               />
             </td>
             <td>
@@ -65,6 +57,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 type="text"
                 value={cuisine}
                 onChange={cuisineHandler}
+                placeholder="Cuisine"
               />
             </td>
             <td>
@@ -74,6 +67,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 type="url"
                 value={photo}
                 onChange={photoHandler}
+                placeholder="Photo"
               />
             </td>
             <td>
@@ -83,6 +77,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 type="text"
                 value={ingredients}
                 onChange={ingredientsHandler}
+                placeholder="Ingredients"
               />
             </td>
             <td>
@@ -92,6 +87,7 @@ function RecipeCreate({ recipes, setRecipes }) {
                 type="content"
                 value={preparation}
                 onChange={preparationHandler}
+                placeholder="Preparation"
               />
             </td>
             <td>
